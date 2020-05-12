@@ -1,0 +1,22 @@
+// クラスで、引数と戻り値のあるメソッドを作る
+
+public class Main {
+    public static void main(String[] args) {
+       Fruit apple = new Fruit(180,10);
+       System.out.println("リンゴの合計金額は" + apple.kingaku() + "円です");
+    }
+}
+
+class Fruit {
+    int a;
+    int b;
+    
+    public Fruit(int tanka,int kosuu) {
+        a = tanka;
+        b = kosuu;
+    }
+    
+    public int kingaku() {
+        return a * b;
+    }
+}
