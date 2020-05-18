@@ -1,0 +1,32 @@
+// クラスの継承
+public class Main {
+    public static void main(String[] args) {
+        Rukina player = new Rukina();
+        player.syokuzi();
+        player.kunnrenn();
+    }
+}
+
+class Animal {
+    String eat;
+    String practice;
+
+    Animal() {
+        eat = "食事をしていた";
+        practice = "剣術の練習をしていた";
+    }
+}
+
+class Rukina extends Animal {
+    
+    String name = "ルキナは";
+    
+    public void syokuzi() {
+        System.out.println(name + eat);
+    }
+    
+    public void kunnrenn() {
+        System.out.println(name + practice);
+    }
+    
+}
